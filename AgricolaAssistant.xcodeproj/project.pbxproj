@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		252EAB712BD8D0F400B7CFD9 /* AgricolaAssistantApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB702BD8D0F400B7CFD9 /* AgricolaAssistantApp.swift */; };
+		252EAB732BD8D0F400B7CFD9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB722BD8D0F400B7CFD9 /* ContentView.swift */; };
+		252EAB752BD8D0F600B7CFD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252EAB742BD8D0F600B7CFD9 /* Assets.xcassets */; };
+		252EAB782BD8D0F600B7CFD9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 252EAB772BD8D0F600B7CFD9 /* Preview Assets.xcassets */; };
+		252EAB822BD8D0F600B7CFD9 /* AgricolaAssistantTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB812BD8D0F600B7CFD9 /* AgricolaAssistantTests.swift */; };
+		252EAB8C2BD8D0F600B7CFD9 /* AgricolaAssistantUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB8B2BD8D0F600B7CFD9 /* AgricolaAssistantUITests.swift */; };
+		252EAB8E2BD8D0F600B7CFD9 /* AgricolaAssistantUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB8D2BD8D0F600B7CFD9 /* AgricolaAssistantUITestsLaunchTests.swift */; };
+		252EAB9B2BD8D19700B7CFD9 /* ChangeRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB9A2BD8D19700B7CFD9 /* ChangeRectangle.swift */; };
+		252EAB9D2BD8D1D700B7CFD9 /* ChangeResourceNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB9C2BD8D1D700B7CFD9 /* ChangeResourceNum.swift */; };
+		252EAB9F2BD8D20200B7CFD9 /* CustomRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */; };
+		252EABA12BD8D21F00B7CFD9 /* CustomResourcePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		252EAB7E2BD8D0F600B7CFD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252EAB652BD8D0F400B7CFD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 252EAB6C2BD8D0F400B7CFD9;
+			remoteInfo = AgricolaAssistant;
+		};
+		252EAB882BD8D0F600B7CFD9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 252EAB652BD8D0F400B7CFD9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 252EAB6C2BD8D0F400B7CFD9;
+			remoteInfo = AgricolaAssistant;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		252EAB6D2BD8D0F400B7CFD9 /* AgricolaAssistant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AgricolaAssistant.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		252EAB702BD8D0F400B7CFD9 /* AgricolaAssistantApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgricolaAssistantApp.swift; sourceTree = "<group>"; };
+		252EAB722BD8D0F400B7CFD9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		252EAB742BD8D0F600B7CFD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		252EAB772BD8D0F600B7CFD9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		252EAB7D2BD8D0F600B7CFD9 /* AgricolaAssistantTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgricolaAssistantTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		252EAB812BD8D0F600B7CFD9 /* AgricolaAssistantTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgricolaAssistantTests.swift; sourceTree = "<group>"; };
+		252EAB872BD8D0F600B7CFD9 /* AgricolaAssistantUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AgricolaAssistantUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		252EAB8B2BD8D0F600B7CFD9 /* AgricolaAssistantUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgricolaAssistantUITests.swift; sourceTree = "<group>"; };
+		252EAB8D2BD8D0F600B7CFD9 /* AgricolaAssistantUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgricolaAssistantUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		252EAB9A2BD8D19700B7CFD9 /* ChangeRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRectangle.swift; sourceTree = "<group>"; };
+		252EAB9C2BD8D1D700B7CFD9 /* ChangeResourceNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeResourceNum.swift; sourceTree = "<group>"; };
+		252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRectangle.swift; sourceTree = "<group>"; };
+		252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResourcePanel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		252EAB6A2BD8D0F400B7CFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252EAB7A2BD8D0F600B7CFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252EAB842BD8D0F600B7CFD9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		252EAB642BD8D0F400B7CFD9 = {
+			isa = PBXGroup;
+			children = (
+				252EAB6F2BD8D0F400B7CFD9 /* AgricolaAssistant */,
+				252EAB802BD8D0F600B7CFD9 /* AgricolaAssistantTests */,
+				252EAB8A2BD8D0F600B7CFD9 /* AgricolaAssistantUITests */,
+				252EAB6E2BD8D0F400B7CFD9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		252EAB6E2BD8D0F400B7CFD9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				252EAB6D2BD8D0F400B7CFD9 /* AgricolaAssistant.app */,
+				252EAB7D2BD8D0F600B7CFD9 /* AgricolaAssistantTests.xctest */,
+				252EAB872BD8D0F600B7CFD9 /* AgricolaAssistantUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		252EAB6F2BD8D0F400B7CFD9 /* AgricolaAssistant */ = {
+			isa = PBXGroup;
+			children = (
+				252EAB702BD8D0F400B7CFD9 /* AgricolaAssistantApp.swift */,
+				252EAB722BD8D0F400B7CFD9 /* ContentView.swift */,
+				252EAB742BD8D0F600B7CFD9 /* Assets.xcassets */,
+				252EAB9A2BD8D19700B7CFD9 /* ChangeRectangle.swift */,
+				252EAB9C2BD8D1D700B7CFD9 /* ChangeResourceNum.swift */,
+				252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */,
+				252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */,
+				252EAB762BD8D0F600B7CFD9 /* Preview Content */,
+			);
+			path = AgricolaAssistant;
+			sourceTree = "<group>";
+		};
+		252EAB762BD8D0F600B7CFD9 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				252EAB772BD8D0F600B7CFD9 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		252EAB802BD8D0F600B7CFD9 /* AgricolaAssistantTests */ = {
+			isa = PBXGroup;
+			children = (
+				252EAB812BD8D0F600B7CFD9 /* AgricolaAssistantTests.swift */,
+			);
+			path = AgricolaAssistantTests;
+			sourceTree = "<group>";
+		};
+		252EAB8A2BD8D0F600B7CFD9 /* AgricolaAssistantUITests */ = {
+			isa = PBXGroup;
+			children = (
+				252EAB8B2BD8D0F600B7CFD9 /* AgricolaAssistantUITests.swift */,
+				252EAB8D2BD8D0F600B7CFD9 /* AgricolaAssistantUITestsLaunchTests.swift */,
+			);
+			path = AgricolaAssistantUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		252EAB6C2BD8D0F400B7CFD9 /* AgricolaAssistant */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 252EAB912BD8D0F600B7CFD9 /* Build configuration list for PBXNativeTarget "AgricolaAssistant" */;
+			buildPhases = (
+				252EAB692BD8D0F400B7CFD9 /* Sources */,
+				252EAB6A2BD8D0F400B7CFD9 /* Frameworks */,
+				252EAB6B2BD8D0F400B7CFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AgricolaAssistant;
+			productName = AgricolaAssistant;
+			productReference = 252EAB6D2BD8D0F400B7CFD9 /* AgricolaAssistant.app */;
+			productType = "com.apple.product-type.application";
+		};
+		252EAB7C2BD8D0F600B7CFD9 /* AgricolaAssistantTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 252EAB942BD8D0F600B7CFD9 /* Build configuration list for PBXNativeTarget "AgricolaAssistantTests" */;
+			buildPhases = (
+				252EAB792BD8D0F600B7CFD9 /* Sources */,
+				252EAB7A2BD8D0F600B7CFD9 /* Frameworks */,
+				252EAB7B2BD8D0F600B7CFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				252EAB7F2BD8D0F600B7CFD9 /* PBXTargetDependency */,
+			);
+			name = AgricolaAssistantTests;
+			productName = AgricolaAssistantTests;
+			productReference = 252EAB7D2BD8D0F600B7CFD9 /* AgricolaAssistantTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		252EAB862BD8D0F600B7CFD9 /* AgricolaAssistantUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 252EAB972BD8D0F600B7CFD9 /* Build configuration list for PBXNativeTarget "AgricolaAssistantUITests" */;
+			buildPhases = (
+				252EAB832BD8D0F600B7CFD9 /* Sources */,
+				252EAB842BD8D0F600B7CFD9 /* Frameworks */,
+				252EAB852BD8D0F600B7CFD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				252EAB892BD8D0F600B7CFD9 /* PBXTargetDependency */,
+			);
+			name = AgricolaAssistantUITests;
+			productName = AgricolaAssistantUITests;
+			productReference = 252EAB872BD8D0F600B7CFD9 /* AgricolaAssistantUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		252EAB652BD8D0F400B7CFD9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					252EAB6C2BD8D0F400B7CFD9 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					252EAB7C2BD8D0F600B7CFD9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 252EAB6C2BD8D0F400B7CFD9;
+					};
+					252EAB862BD8D0F600B7CFD9 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 252EAB6C2BD8D0F400B7CFD9;
+					};
+				};
+			};
+			buildConfigurationList = 252EAB682BD8D0F400B7CFD9 /* Build configuration list for PBXProject "AgricolaAssistant" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 252EAB642BD8D0F400B7CFD9;
+			productRefGroup = 252EAB6E2BD8D0F400B7CFD9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				252EAB6C2BD8D0F400B7CFD9 /* AgricolaAssistant */,
+				252EAB7C2BD8D0F600B7CFD9 /* AgricolaAssistantTests */,
+				252EAB862BD8D0F600B7CFD9 /* AgricolaAssistantUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		252EAB6B2BD8D0F400B7CFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252EAB782BD8D0F600B7CFD9 /* Preview Assets.xcassets in Resources */,
+				252EAB752BD8D0F600B7CFD9 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252EAB7B2BD8D0F600B7CFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252EAB852BD8D0F600B7CFD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		252EAB692BD8D0F400B7CFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252EAB9F2BD8D20200B7CFD9 /* CustomRectangle.swift in Sources */,
+				252EAB732BD8D0F400B7CFD9 /* ContentView.swift in Sources */,
+				252EAB9D2BD8D1D700B7CFD9 /* ChangeResourceNum.swift in Sources */,
+				252EAB9B2BD8D19700B7CFD9 /* ChangeRectangle.swift in Sources */,
+				252EAB712BD8D0F400B7CFD9 /* AgricolaAssistantApp.swift in Sources */,
+				252EABA12BD8D21F00B7CFD9 /* CustomResourcePanel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252EAB792BD8D0F600B7CFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252EAB822BD8D0F600B7CFD9 /* AgricolaAssistantTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		252EAB832BD8D0F600B7CFD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				252EAB8C2BD8D0F600B7CFD9 /* AgricolaAssistantUITests.swift in Sources */,
+				252EAB8E2BD8D0F600B7CFD9 /* AgricolaAssistantUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		252EAB7F2BD8D0F600B7CFD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 252EAB6C2BD8D0F400B7CFD9 /* AgricolaAssistant */;
+			targetProxy = 252EAB7E2BD8D0F600B7CFD9 /* PBXContainerItemProxy */;
+		};
+		252EAB892BD8D0F600B7CFD9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 252EAB6C2BD8D0F400B7CFD9 /* AgricolaAssistant */;
+			targetProxy = 252EAB882BD8D0F600B7CFD9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		252EAB8F2BD8D0F600B7CFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		252EAB902BD8D0F600B7CFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		252EAB922BD8D0F600B7CFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AgricolaAssistant/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hirosawa.AgricolaAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		252EAB932BD8D0F600B7CFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"AgricolaAssistant/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hirosawa.AgricolaAssistant;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		252EAB952BD8D0F600B7CFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hirosawa.AgricolaAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgricolaAssistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgricolaAssistant";
+			};
+			name = Debug;
+		};
+		252EAB962BD8D0F600B7CFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hirosawa.AgricolaAssistantTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AgricolaAssistant.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AgricolaAssistant";
+			};
+			name = Release;
+		};
+		252EAB982BD8D0F600B7CFD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hirosawa.AgricolaAssistantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgricolaAssistant;
+			};
+			name = Debug;
+		};
+		252EAB992BD8D0F600B7CFD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = hirosawa.AgricolaAssistantUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AgricolaAssistant;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		252EAB682BD8D0F400B7CFD9 /* Build configuration list for PBXProject "AgricolaAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252EAB8F2BD8D0F600B7CFD9 /* Debug */,
+				252EAB902BD8D0F600B7CFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		252EAB912BD8D0F600B7CFD9 /* Build configuration list for PBXNativeTarget "AgricolaAssistant" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252EAB922BD8D0F600B7CFD9 /* Debug */,
+				252EAB932BD8D0F600B7CFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		252EAB942BD8D0F600B7CFD9 /* Build configuration list for PBXNativeTarget "AgricolaAssistantTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252EAB952BD8D0F600B7CFD9 /* Debug */,
+				252EAB962BD8D0F600B7CFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		252EAB972BD8D0F600B7CFD9 /* Build configuration list for PBXNativeTarget "AgricolaAssistantUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				252EAB982BD8D0F600B7CFD9 /* Debug */,
+				252EAB992BD8D0F600B7CFD9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 252EAB652BD8D0F400B7CFD9 /* Project object */;
+}
