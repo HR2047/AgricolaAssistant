@@ -18,6 +18,7 @@
 		252EAB9D2BD8D1D700B7CFD9 /* ChangeResourceNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB9C2BD8D1D700B7CFD9 /* ChangeResourceNum.swift */; };
 		252EAB9F2BD8D20200B7CFD9 /* CustomRectangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */; };
 		252EABA12BD8D21F00B7CFD9 /* CustomResourcePanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */; };
+		252EABA72BE0A36400B7CFD9 /* CustomFence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 252EABA62BE0A36400B7CFD9 /* CustomFence.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		252EAB9C2BD8D1D700B7CFD9 /* ChangeResourceNum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeResourceNum.swift; sourceTree = "<group>"; };
 		252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRectangle.swift; sourceTree = "<group>"; };
 		252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomResourcePanel.swift; sourceTree = "<group>"; };
+		252EABA62BE0A36400B7CFD9 /* CustomFence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFence.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 				252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */,
 				252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */,
 				252EAB762BD8D0F600B7CFD9 /* Preview Content */,
+				252EABA62BE0A36400B7CFD9 /* CustomFence.swift */,
 			);
 			path = AgricolaAssistant;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				252EAB9B2BD8D19700B7CFD9 /* ChangeRectangle.swift in Sources */,
 				252EAB712BD8D0F400B7CFD9 /* AgricolaAssistantApp.swift in Sources */,
 				252EABA12BD8D21F00B7CFD9 /* CustomResourcePanel.swift in Sources */,
+				252EABA72BE0A36400B7CFD9 /* CustomFence.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
