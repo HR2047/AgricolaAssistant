@@ -10,6 +10,7 @@ import SwiftUI
 struct CustomRectangle: View {
     @State private var showModal = false
     @Binding var rectangle_color: Color //:付けるだけで引数になるっぽい
+    var fmode: Bool
     
     var body: some View {
         VStack {
@@ -20,6 +21,7 @@ struct CustomRectangle: View {
                 .onTapGesture {
                     self.showModal.toggle()
                 }
+                .disabled(fmode)
                 .sheet(isPresented: $showModal) {
                     // ここにモーダルの内容を記述します
                     Text("タイルの種類変更")
