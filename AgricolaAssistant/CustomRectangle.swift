@@ -36,4 +36,5 @@ struct CustomRectangle: View {
 
 #Preview {
     ContentView()
+        .environmentObject(ResourceViewModel())
 }

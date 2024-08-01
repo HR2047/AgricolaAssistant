@@ -9,32 +9,40 @@ import SwiftUI
 
 struct ChangeResourceNum: View{
 //    @Binding var count_2: Int
-    var resourse_name: String
-    var resourse_color: Color
+    @EnvironmentObject var resourceViewModel: ResourceViewModel
+    var resource_type: Int
     var body: some View {
+        let resource_imgname = resourcedataList[resource_type].imgname
+        let resource_color = resourcedataList[resource_type].color
+        let resource_name = resourcedataList[resource_type].name
+        
         HStack{
             Spacer()
             
             VStack{
                 
                 Button("-1"){
-    //                count_2 -= 10
+                    resourceViewModel.increaseResourceNum(for: resource_name, by: -1)
                 }
                 Button("-5"){
-    //                count_2 -= 10
+                    resourceViewModel.increaseResourceNum(for: resource_name, by: -5)
                 }
                 Button("-10"){
-    //                count_2 -= 10
+                    resourceViewModel.increaseResourceNum(for: resource_name, by: -10)
                 }
             }
             
             Spacer()
             ZStack {
-                Image(systemName: resourse_name)
-                    .foregroundColor(resourse_color)
+                Image(systemName: resource_imgname)
+                    .foregroundColor(resource_color)
                     .scaleEffect(2)
                 
-                Text("0")
+                if let index = resourceViewModel.index(for: resource_name) {
+                    Text("\(resourceViewModel.resources[index].num)")
+                } else {
+                    Text("Resource not found")
+                }
                 
                 
             }
@@ -42,19 +50,15 @@ struct ChangeResourceNum: View{
             Spacer()
             
             VStack{
-                Spacer()
                 Button("+1"){
-    //                count_2 -= 10
+                    resourceViewModel.increaseResourceNum(for: resource_name, by: 1)
                 }
-                Spacer()
                 Button("+5"){
-    //                count_2 -= 10
+                    resourceViewModel.increaseResourceNum(for: resource_name, by: 5)
                 }
-                Spacer()
                 Button("+10"){
-    //                count_2 -= 10
+                    resourceViewModel.increaseResourceNum(for: resource_name, by: 10)
                 }
-                Spacer()
             }
             
             Spacer()
@@ -64,6 +68,9 @@ struct ChangeResourceNum: View{
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+            .environmentObject(ResourceViewModel())
+    }
 }

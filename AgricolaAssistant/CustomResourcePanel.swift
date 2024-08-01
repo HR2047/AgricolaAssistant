@@ -9,13 +9,17 @@ import SwiftUI
 
 struct CustomResourcePanel: View {
     @State private var showModal = false
-    var resourse_name: String
-    var resourse_color: Color
-    var resourse_type: Int
+    @EnvironmentObject var resourceViewModel: ResourceViewModel
+    var resource_type: Int
+    
     var body: some View {
+        let resource_imgname = resourcedataList[resource_type].imgname
+        let resource_color = resourcedataList[resource_type].color
+        let resource_name = resourcedataList[resource_type].name
+        
         ZStack {
-            Image(systemName: resourse_name)
-                .foregroundColor(resourse_color)
+            Image(systemName: resource_imgname)
+                .foregroundColor(resource_color)
                 .scaleEffect(2)
             //                .frame(width: UIScreen.main.bounds.width / 3, height: UIScreen.main.bounds.width / 3)
             //                .padding(.top, 10)
@@ -24,11 +28,18 @@ struct CustomResourcePanel: View {
                 }
                 .sheet(isPresented: $showModal) {
                     // ここにモーダルの内容を記述します
-                    ChangeResourceNum(resourse_name: resourse_name, resourse_color: resourse_color)
+                    ChangeResourceNum(resource_type: resource_type)
                         .presentationDetents([.medium])
+                        .environmentObject(self.resourceViewModel)
                 }
             
-            Text("\(resourceList[resourse_type].num)")
+            // woodに対応するリソースの数を取得して表示
+            if let index = resourceViewModel.index(for: resource_name) {
+                Text("\(resourceViewModel.resources[index].num)")
+            } else {
+                Text("Resource not found")
+            }
+            //Text("0")
             
             
         }
@@ -38,4 +49,5 @@ struct CustomResourcePanel: View {
 
 #Preview {
     ContentView()
+        .environmentObject(ResourceViewModel())
 }

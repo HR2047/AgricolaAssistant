@@ -111,6 +111,7 @@
 				252EAB9C2BD8D1D700B7CFD9 /* ChangeResourceNum.swift */,
 				252EAB9E2BD8D20200B7CFD9 /* CustomRectangle.swift */,
 				252EABA02BD8D21F00B7CFD9 /* CustomResourcePanel.swift */,
+				252EABA62BE0A36400B7CFD9 /* CustomFence.swift */,
 				252EAB762BD8D0F600B7CFD9 /* Preview Content */,
 				252EABA62BE0A36400B7CFD9 /* CustomFence.swift */,
 			);

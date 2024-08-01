@@ -16,7 +16,7 @@ struct CustomFence: View {
         VStack {
             if horizontal {
                 Rectangle()
-                    .foregroundStyle(showFence ? Color.brown : Color.white)
+                    .foregroundStyle(showFence ? Color.brown : fmode ? Color(red: 0.9, green: 0.9, blue: 0.9) : Color.white)
                     .frame(width: UIScreen.main.bounds.width / 4.5, height: 5)
                     .padding(.top, 5)
                     .onTapGesture {
@@ -25,7 +25,7 @@ struct CustomFence: View {
                     .disabled(!fmode) // showFenceがfalseの場合はジェスチャーを無効にする
             } else {
                 Rectangle()
-                    .foregroundStyle(showFence ? Color.brown : Color.white)
+                    .foregroundStyle(showFence ? Color.brown : fmode ? Color(red: 0.9, green: 0.9, blue: 0.9) : Color.white)
                     .frame(width: 5, height: UIScreen.main.bounds.width / 4.5)
                     .padding(.top, 5)
                     .onTapGesture {
